@@ -1,7 +1,27 @@
 aid: goodlegal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/goodlegal.png
 name: Goodlegal
-description: Goodlegal is a company surfaced as a portfolio company of earlybird and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Goodlegal was a Bucharest-based legal-tech startup founded in 2021 by Vasile
+  Tiple (former UiPath Head of Legal Automation) building a legal infrastructure platform
+  and "one-stop shop for legal compliance" — a drag-and-drop document builder, out-of-the-box
+  document templates, an editor with text analysis, e-signature, workflow automation, and
+  integrations aimed at standardizing legal work for individuals and organizations. It raised
+  a ~EUR 1.2M pre-seed round in 2022 led by Earlybird's Digital East Fund. The company wound
+  down and shut off its platform at the end of 2023 (per founder Vasile Tiple's "Final thoughts
+  on Goodlegal" post), and the goodlegal.io domain is now parked / listed for sale. No public
+  API, developer portal, documentation, or machine-readable API surface was ever published, and
+  none exists today. This profile is retained as a historical/defunct portfolio-lead record.
 url: https://raw.githubusercontent.com/api-evangelist/goodlegal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,33 @@ x-backed-by:
 - earlybird
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: platform shut down end of 2023; goodlegal.io domain now parked/for-sale
+x-defunct-date: '2023-12'
+x-defunct-source: https://goodlegal.substack.com/p/final-thoughts-on-goodlegal
+x-former-website: https://goodlegal.io
+x-founded: '2021'
+x-headquarters: Bucharest, Romania
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Legal
+- Legal Tech
+- Document Automation
+- Compliance
+- E-Signature
+- Romania
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
